@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\{MoodleController};
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MoodleController::class, 'users']);
+
+Route::get('moodle_users', [MoodleController::class, 'users']);
+Route::get('moodle_courses', [MoodleController::class, 'courses']);
+Route::get('moodle_users_courses', [MoodleController::class, 'usersCoursesWithGrades']);

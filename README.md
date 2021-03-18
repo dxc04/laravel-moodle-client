@@ -1,5 +1,5 @@
 ### Laravel Moodle Client
-1. cd to `moodle-client` folder
+1. cd to `laravel-moodle-client` folder
 2. Copy env configs `cp .env.example .env`
 3. Set `MOODLE_URL` and `MOODLE_TOKEN` values
 4. Run `composer install`
